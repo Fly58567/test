@@ -1,7 +1,7 @@
 #===================================================================#
 #       Tool Name: SitKaII 2.5 MB FW FVS Tool                       #
 #         Version: 0.1                                              #
-#         Edit by: Luciano Lu 2018/12/22                            #
+#         Edit by: Fly Li 2018/12/22                                #
 #===================================================================#
 import sys
 import datetime
