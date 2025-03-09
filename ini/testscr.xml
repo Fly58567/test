@@ -1,0 +1,543 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<DiagCaptor_Root>
+  <FFT_HEADER error_stop="TRUE">
+     <PROGRAM_NAME>FFT</PROGRAM_NAME>
+     <VERSION>2.1.0</VERSION>
+     <PROJECT_NAME> Project</PROJECT_NAME>
+     <ITEM_NUM>12</ITEM_NUM>
+     <LOOP_NUM>1</LOOP_NUM>
+     <ERROR_STOP>TRUE</ERROR_STOP>
+  </FFT_HEADER>
+  <FFT_ITEM_01 item_id="HWCHK" proc_name="hwchktest" code_base="0xD0100000" unit_amount="12">
+     <UNIT id="1">
+         <NAME>Verify BIOS Information Test</NAME>
+         <BITMAP>0x01</BITMAP>
+         <ACTIVE>FALSE</ACTIVE>      
+     </UNIT>
+     <UNIT id="2">
+         <NAME>Verify System Information Test</NAME>
+         <BITMAP>0X02</BITMAP>
+         <ACTIVE>FALSE</ACTIVE>      
+     </UNIT>
+      <UNIT id="3">
+         <NAME>Verify Baseboard Information Test</NAME>
+         <BITMAP>0x04</BITMAP>
+         <ACTIVE>FALSE</ACTIVE>       
+     </UNIT>
+     <UNIT id="4">
+         <NAME>Verify CPU Information Test</NAME>
+         <BITMAP>0x08</BITMAP>
+         <ACTIVE>FALSE</ACTIVE>     
+     </UNIT>  
+     <UNIT id="5">
+         <NAME>Verify Memory Information Test</NAME>
+         <BITMAP>0x10</BITMAP>
+         <ACTIVE>FALSE</ACTIVE>        
+     </UNIT>   
+     <UNIT id="6">
+         <NAME>Verify Chipset Information Test</NAME>
+         <BITMAP>0x20</BITMAP>
+         <ACTIVE>FALSE</ACTIVE>     
+     </UNIT>  
+     <UNIT id="7">
+         <NAME>Verify Video Information Test</NAME>
+          <BITMAP>0x80</BITMAP>
+         <ACTIVE>FALSE</ACTIVE>            
+     </UNIT>    
+     <UNIT id="8">
+         <NAME>Verify LAN Information Test</NAME>
+         <BITMAP>0x200</BITMAP>
+         <ACTIVE>FALSE</ACTIVE>    
+     </UNIT> 
+     <UNIT id="9">
+         <NAME>Verify PCI Information Test</NAME>
+         <BITMAP>0x400</BITMAP>
+         <ACTIVE>FALSE</ACTIVE>         
+     </UNIT>         
+     <UNIT id="10">
+         <NAME>Verify HDD Information Test</NAME>
+         <BITMAP>0x800</BITMAP>
+         <ACTIVE>FALSE</ACTIVE>      
+     </UNIT>     
+     <UNIT id="11">
+         <NAME>Verify Serial Information Test</NAME>
+         <BITMAP>0x4000</BITMAP>
+         <ACTIVE>FALSE</ACTIVE>          
+     </UNIT>  
+     <UNIT id="12">
+         <NAME>Verify USB Information Test</NAME>
+         <BITMAP>0x20000</BITMAP>
+         <ACTIVE>FALSE</ACTIVE>           
+     </UNIT> 
+  </FFT_ITEM_01>
+  <FFT_ITEM_02 item_id="CPU" proc_name="cputest" code_base="0xD0200000" unit_amount="7">
+     <UNIT id="1">
+         <NAME>Processors Topology Structure</NAME>
+         <BITMAP>0x01</BITMAP>
+         <ACTIVE>TRUE</ACTIVE>      
+     </UNIT> 
+     <UNIT id="2">
+         <NAME>CPU Frequency Test</NAME>
+         <BITMAP>0x02</BITMAP>
+         <ACTIVE>TRUE</ACTIVE>       
+     </UNIT> 
+     <UNIT id="3">
+         <NAME>CPU Information Test</NAME>
+         <BITMAP>0x04</BITMAP>
+         <ACTIVE>TRUE</ACTIVE>    
+     </UNIT> 
+     <UNIT id="4">
+         <NAME>General Register Test</NAME>
+         <BITMAP>0x08</BITMAP>
+         <ACTIVE>TRUE</ACTIVE>          
+     </UNIT>
+     <UNIT id="5">
+         <NAME>Mathematical Calculation Test</NAME>
+         <BITMAP>0x10</BITMAP>
+         <ACTIVE>TRUE</ACTIVE>           
+     </UNIT> 
+     <UNIT id="6">
+         <NAME>L1 and L2 Cache Reliability Emending</NAME>
+         <BITMAP>0x20</BITMAP>
+         <ACTIVE>TRUE</ACTIVE>    
+     </UNIT> 
+      <UNIT id="7">
+         <NAME>MMX Instruction Test</NAME>
+         <BITMAP>0x40</BITMAP>
+         <ACTIVE>TRUE</ACTIVE>    
+     </UNIT>     
+  </FFT_ITEM_02>
+  <FFT_ITEM_03 item_id="PCH" proc_name="pchtest" code_base="0xD3000000" unit_amount="7">
+     <UNIT id="1">
+         <NAME>PCH Identification Test</NAME>
+         <BITMAP>0x01</BITMAP>
+         <ACTIVE>FALSE</ACTIVE>          
+     </UNIT>   
+     <UNIT id="2">
+         <NAME>PCH ACPI Configuration Test</NAME>
+         <BITMAP>0x02</BITMAP>
+         <ACTIVE>FALSE</ACTIVE>        
+     </UNIT>   
+     <UNIT id="3">
+         <NAME>PCH TCO Registers Test</NAME>
+          <BITMAP>0x04</BITMAP>
+         <ACTIVE>FALSE</ACTIVE>
+     </UNIT>   
+      <UNIT id="4">
+         <NAME>PCH Multimedia Timer Test</NAME>
+          <BITMAP>0x08</BITMAP>
+         <ACTIVE>FALSE</ACTIVE>         
+     </UNIT>   
+      <UNIT id="5">
+         <NAME>PCH Configuration Space Access Test</NAME>
+          <BITMAP>0x10</BITMAP>
+         <ACTIVE>FALSE</ACTIVE>        
+     </UNIT>   
+      <UNIT id="6">
+         <NAME>Check PCH Info Test</NAME>
+          <BITMAP>0x20</BITMAP>
+         <ACTIVE>FALSE</ACTIVE>             
+     </UNIT>
+     <UNIT id="7">
+         <NAME> PCH IRQ Controller Test  </NAME>
+          <BITMAP>0x40</BITMAP>
+         <ACTIVE>FALSE</ACTIVE>               
+     </UNIT>  
+  </FFT_ITEM_03>
+ <!-- <FFT_ITEM_04 item_id="HDD" proc_name="hddtest" code_base="0xD0900000" unit_amount="8">
+     <UNIT id="1">
+         <NAME> Logical Sequential Test </NAME>
+          <BITMAP>0x01</BITMAP>
+         <ACTIVE>FALSE</ACTIVE>        
+     </UNIT>  
+     <UNIT id="2">
+         <NAME>Logical Random R/W/C Test</NAME>
+          <BITMAP>0x02</BITMAP>
+         <ACTIVE>FALSE</ACTIVE>              
+     </UNIT>  
+     <UNIT id="3">
+         <NAME>Free Space Logical Sequential R/W/C Test</NAME>
+          <BITMAP>0x04</BITMAP>
+         <ACTIVE>FALSE</ACTIVE>           
+     </UNIT>  
+     <UNIT id="4">
+         <NAME> Free Space Logical Random R/W/C Test</NAME>
+          <BITMAP>0x08</BITMAP>
+         <ACTIVE>FALSE</ACTIVE>          
+     </UNIT>  
+     <UNIT id="5">
+         <NAME>Physical Sequential R/W/C Test</NAME>
+          <BITMAP>0x10</BITMAP>
+         <ACTIVE>FALSE</ACTIVE>       
+     </UNIT>  
+     <UNIT id="6">
+         <NAME>Physical Random R/W/C Test</NAME>
+          <BITMAP>0x20</BITMAP>
+         <ACTIVE>FALSE</ACTIVE>      
+     </UNIT>  
+     <UNIT id="7">
+         <NAME>SMART Test</NAME>
+          <BITMAP>0x40</BITMAP>
+         <ACTIVE>FALSE</ACTIVE>           
+     </UNIT>  
+     <UNIT id="8">
+         <NAME>Disk Structure Test</NAME>
+          <BITMAP>0x80</BITMAP>
+         <ACTIVE>FALSE</ACTIVE>              
+     </UNIT>  
+  </FFT_ITEM_04>-->
+   <FFT_ITEM_05 item_id="MEMORY" proc_name="memorytest" code_base="0xD0800000" unit_amount="17">
+     <UNIT id="1">
+         <NAME> Memory Random Value Test</NAME>
+          <BITMAP>0x01</BITMAP>
+         <ACTIVE>FALSE</ACTIVE>      
+     </UNIT>  
+     <UNIT id="2">
+         <NAME>Memory XOR Test</NAME>
+         <BITMAP>0x02</BITMAP>
+         <ACTIVE>FALSE</ACTIVE>        
+     </UNIT>  
+     <UNIT id="3">
+         <NAME>Memory Sub Test</NAME>
+         <BITMAP>0x04</BITMAP>
+         <ACTIVE>FALSE</ACTIVE>    
+     </UNIT>  
+     <UNIT id="4">
+         <NAME>Memory MUL Test </NAME>
+         <BITMAP>0x08</BITMAP>
+         <ACTIVE>FALSE</ACTIVE>      
+     </UNIT>  
+     <UNIT id="5">
+         <NAME>Memory DIV Test </NAME>
+         <BITMAP>0x10</BITMAP>
+         <ACTIVE>FALSE</ACTIVE>                
+     </UNIT>  
+     <UNIT id="6">
+         <NAME>Memory OR Test</NAME>
+         <BITMAP>0x20</BITMAP>
+         <ACTIVE>FALSE</ACTIVE>     
+     </UNIT>  
+     <UNIT id="7">
+         <NAME>Memory AND Test</NAME>
+         <BITMAP>0x40</BITMAP>
+         <ACTIVE>FALSE</ACTIVE>              
+     </UNIT>  
+     <UNIT id="8">
+         <NAME> Memory SEQINC Test</NAME>
+         <BITMAP>0x80</BITMAP>
+         <ACTIVE>FALSE</ACTIVE>     
+     </UNIT>  
+     <UNIT id="9">
+         <NAME>Memory Solidbits Test</NAME>
+         <BITMAP>0x100</BITMAP>
+         <ACTIVE>FALSE</ACTIVE>         
+     </UNIT>  
+     <UNIT id="10">
+         <NAME>Memory Checkboard Test</NAME>
+         <BITMAP>0x200</BITMAP>
+         <ACTIVE>FALSE</ACTIVE>         
+     </UNIT> 
+     <UNIT id="11">
+         <NAME>Memory Blockseq Test</NAME>
+         <BITMAP>0x400</BITMAP>
+         <ACTIVE>FALSE</ACTIVE>        
+     </UNIT>  
+     <UNIT id="12">
+         <NAME>Memory Walkbits0 Test</NAME>
+         <BITMAP>0x800</BITMAP>
+         <ACTIVE>FALSE</ACTIVE>            
+     </UNIT>  
+     <UNIT id="13">
+         <NAME>Memory Walkbit1 Test</NAME>
+         <BITMAP>0x1000</BITMAP>
+         <ACTIVE>FALSE</ACTIVE>        
+     </UNIT> 
+     <UNIT id="14">
+         <NAME>Memory Bitspread Test</NAME>
+          <BITMAP>0x2000</BITMAP>
+         <ACTIVE>FALSE</ACTIVE>           
+     </UNIT>    
+      <UNIT id="15">
+         <NAME>Memory Bitflip Test</NAME>
+          <BITMAP>0x4000</BITMAP>
+         <ACTIVE>FALSE</ACTIVE>         
+     </UNIT>   
+      <UNIT id="16">
+         <NAME>Memory Random Block Copy Test</NAME>
+          <BITMAP>0x8000</BITMAP>
+         <ACTIVE>FALSE</ACTIVE>            
+     </UNIT>   
+      <UNIT id="17">
+         <NAME>Memory Moving inversion Test</NAME>
+          <BITMAP>0x10000</BITMAP>
+         <ACTIVE>FALSE</ACTIVE>             
+     </UNIT>    
+  </FFT_ITEM_05>
+   <FFT_ITEM_06 item_id="CMOS" proc_name="cmostest" code_base="0xD1300000" unit_amount="6">
+     <UNIT id="1">
+         <NAME>Standard CMOS Data Verification Test</NAME>
+         <BITMAP>0x01</BITMAP>
+         <ACTIVE>FALSE</ACTIVE>        
+     </UNIT>  
+     <UNIT id="2">
+         <NAME>Extend CMOS Data Verification Test</NAME>
+         <BITMAP>0x02</BITMAP>
+         <ACTIVE>FALSE</ACTIVE>           
+     </UNIT>  
+     <UNIT id="3">
+         <NAME>Standard CMOS Restore Test</NAME>
+         <BITMAP>0x04</BITMAP>
+         <ACTIVE>FALSE</ACTIVE>         
+     </UNIT>  
+     <UNIT id="4">
+         <NAME>Extended CMOS Restore Test</NAME>
+         <BITMAP>0x08</BITMAP>
+         <ACTIVE>FALSE</ACTIVE>         
+     </UNIT>  
+     <UNIT id="5">
+         <NAME>Leap Year Verification Test</NAME>
+         <BITMAP>0x10</BITMAP>
+         <ACTIVE>FALSE</ACTIVE>            
+     </UNIT>  
+     <UNIT id="6">
+         <NAME>Y2K Verification Test </NAME>
+         <BITMAP>0x20</BITMAP>
+         <ACTIVE>FALSE</ACTIVE>              
+     </UNIT>    
+  </FFT_ITEM_06>
+  <FFT_ITEM_07 item_id="PCI" proc_name="pcitest" code_base="0xD0600000" unit_amount="9">
+     <UNIT id="1">
+         <NAME>PCI Device Test </NAME>
+         <BITMAP>0x01</BITMAP>
+         <ACTIVE>FALSE</ACTIVE>              
+     </UNIT>  
+     <UNIT id="2">
+         <NAME>PCI Express Device Test</NAME>
+         <BITMAP>0x02</BITMAP>
+         <ACTIVE>FALSE</ACTIVE>             
+     </UNIT>  
+     <UNIT id="3">
+         <NAME>PCI-X Device Test</NAME>
+         <BITMAP>0x04</BITMAP>
+         <ACTIVE>FALSE</ACTIVE>             
+     </UNIT>  
+     <UNIT id="4">
+         <NAME>PCIe Switch Test</NAME>
+         <BITMAP>0x08</BITMAP>
+         <ACTIVE>FALSE</ACTIVE>             
+     </UNIT>  
+     <UNIT id="5">
+         <NAME>PCIe Relink Test</NAME>
+         <BITMAP>0x10</BITMAP>
+         <ACTIVE>FALSE</ACTIVE>          
+     </UNIT>  
+     <UNIT id="6">
+         <NAME>PCIe Retrain Test </NAME>
+         <BITMAP>0x20</BITMAP>
+         <ACTIVE>FALSE</ACTIVE>          
+     </UNIT>  
+     <UNIT id="7">
+         <NAME>PCIe Bus Reset Test</NAME>
+         <BITMAP>0x40</BITMAP>
+         <ACTIVE>FALSE</ACTIVE>               
+     </UNIT> 
+     <UNIT id="8">
+         <NAME>PCIe Port Disable Test</NAME>
+         <BITMAP>0x80</BITMAP>
+         <ACTIVE>FALSE</ACTIVE>      
+     </UNIT>    
+     <UNIT id="9">
+         <NAME> PCIe Reset SAS Controller Test</NAME>
+         <BITMAP>0x100</BITMAP>
+         <ACTIVE>FALSE</ACTIVE>            
+     </UNIT>        
+  </FFT_ITEM_07>
+  <FFT_ITEM_08 item_id="SMBUS" proc_name="smbustest" code_base="0xD1400000" unit_amount="3">
+     <UNIT id="1">
+         <NAME>Host Controller Test</NAME>
+         <BITMAP>0x01</BITMAP>
+         <ACTIVE>FALSE</ACTIVE>         
+     </UNIT> 
+     <UNIT id="2">
+         <NAME>Slave List Data Test</NAME>
+         <BITMAP>0x02</BITMAP>
+         <ACTIVE>FALSE</ACTIVE>           
+     </UNIT>  
+     <UNIT id="3">
+         <NAME>SMBus Read Test</NAME>
+          <BITMAP>0x04</BITMAP>
+         <ACTIVE>FALSE</ACTIVE>            
+     </UNIT>   
+  </FFT_ITEM_08>
+  <FFT_ITEM_09 item_id="TPM" proc_name="TPMtest" code_base="0xD2700000" unit_amount="4">
+     <UNIT id="1">
+         <NAME>TPM Present Verication Test</NAME>
+          <BITMAP>0x01</BITMAP>
+         <ACTIVE>FALSE</ACTIVE>        
+     </UNIT> 
+     <UNIT id="2">
+         <NAME>TPM Base Data Checking Test</NAME>
+          <BITMAP>0x02</BITMAP>
+         <ACTIVE>FALSE</ACTIVE>            
+     </UNIT>  
+     <UNIT id="3">
+         <NAME> TPM Self Test Full Test</NAME>
+          <BITMAP>0x04</BITMAP>
+         <ACTIVE>FALSE</ACTIVE>       
+     </UNIT> 
+      <UNIT id="4">
+         <NAME>TPM General Operation Test</NAME>
+          <BITMAP>0x08</BITMAP>
+         <ACTIVE>FALSE</ACTIVE>              
+     </UNIT>     
+   </FFT_ITEM_09>
+    <FFT_ITEM_10 item_id="SMBIOS" proc_name="smbiostest" code_base="0xD2D00000" unit_amount="21">
+     <UNIT id="1">
+         <NAME>Verify BIOS Information</NAME>
+          <BITMAP>0x01</BITMAP>
+         <ACTIVE>FALSE</ACTIVE>        
+     </UNIT> 
+     <UNIT id="2">
+         <NAME>Verify System Information</NAME>
+          <BITMAP>0x02</BITMAP>
+         <ACTIVE>FALSE</ACTIVE>                 
+     </UNIT>  
+     <UNIT id="3">
+         <NAME>Verify Baseboard Information</NAME>
+          <BITMAP>0x04</BITMAP>
+         <ACTIVE>FALSE</ACTIVE>        
+     </UNIT> 
+      <UNIT id="4">
+         <NAME>Verify System Chassis Information</NAME>
+          <BITMAP>0x08</BITMAP>
+         <ACTIVE>FALSE</ACTIVE>       
+     </UNIT>  
+     <UNIT id="5">
+         <NAME>Verify Processor Information</NAME>
+          <BITMAP>0x10</BITMAP>
+         <ACTIVE>FALSE</ACTIVE>         
+     </UNIT> 
+      <UNIT id="6">
+         <NAME>Verify Memory Controller Information</NAME>
+          <BITMAP>0x20</BITMAP>
+         <ACTIVE>FALSE</ACTIVE>          
+     </UNIT>     
+     <UNIT id="7">
+         <NAME>Verify Memory Module Information</NAME>
+          <BITMAP>0x40</BITMAP>
+         <ACTIVE>FALSE</ACTIVE>       
+     </UNIT>     
+     <UNIT id="8">
+         <NAME>Verify Cache Information</NAME>
+          <BITMAP>0x80</BITMAP>
+         <ACTIVE>FALSE</ACTIVE>            
+     </UNIT>     
+     <UNIT id="9">
+         <NAME>Vefigy Port Connector Information</NAME>
+          <BITMAP>0x100</BITMAP>
+         <ACTIVE>FALSE</ACTIVE>               
+     </UNIT>
+     <UNIT id="10">
+         <NAME>Verify System Slots Information</NAME>
+          <BITMAP>0x200</BITMAP>    
+          <ACTIVE>FALSE</ACTIVE>    
+     </UNIT>
+     <UNIT id="11">
+         <NAME>Verify On Board Devices Information</NAME>
+          <BITMAP>0x400</BITMAP>
+         <ACTIVE>FALSE</ACTIVE>           
+     </UNIT>        
+     <UNIT id="12">
+         <NAME>Verify OEM Strings Information</NAME>
+          <BITMAP>0x800</BITMAP>
+         <ACTIVE>FALSE</ACTIVE>          
+     </UNIT>        
+     <UNIT id="13">
+         <NAME>Verify System Configuration Options Information</NAME>
+          <BITMAP>0x1000</BITMAP>
+         <ACTIVE>FALSE</ACTIVE>        
+     </UNIT>        
+     <UNIT id="14">
+         <NAME>Verify BIOS Language Information</NAME>
+          <BITMAP>0x2000</BITMAP>
+         <ACTIVE>FALSE</ACTIVE>       
+     </UNIT>        
+     <UNIT id="15">
+         <NAME>Verify Group Associtions Information</NAME>
+          <BITMAP>0x4000</BITMAP>
+         <ACTIVE>FALSE</ACTIVE>             
+     </UNIT>        
+     <UNIT id="16">
+         <NAME>Verify System Event Log Information</NAME>
+          <BITMAP>0x8000</BITMAP>
+         <ACTIVE>FALSE</ACTIVE>          
+     </UNIT>        
+     <UNIT id="17">
+         <NAME>Verify Physical Memory Array Information</NAME>
+          <BITMAP>0x10000</BITMAP>
+         <ACTIVE>FALSE</ACTIVE>           
+     </UNIT> 
+     <UNIT id="18">
+         <NAME>Verify Memory Device Information</NAME>
+          <BITMAP>0x20000</BITMAP>
+         <ACTIVE>FALSE</ACTIVE>          
+     </UNIT>            
+     <UNIT id="19">
+         <NAME>Verify Memory Error Information</NAME>
+          <BITMAP>0x40000</BITMAP>
+         <ACTIVE>FALSE</ACTIVE>           
+     </UNIT>            
+     <UNIT id="20">
+         <NAME>Verify Memory Array Mapped Address Information</NAME>
+          <BITMAP>0x80000</BITMAP>
+         <ACTIVE>FALSE</ACTIVE>       
+     </UNIT>   
+     <UNIT id="21">
+         <NAME>Verify Memory device mapped Address Information</NAME>
+          <BITMAP>0x100000</BITMAP>
+         <ACTIVE>FALSE</ACTIVE>             
+     </UNIT>                                  
+   </FFT_ITEM_10>
+   <FFT_ITEM_11 item_id="BMC" proc_name="bmctest" code_base="0XD2100000" unit_amount="8">
+     <UNIT id="1">
+         <NAME>Self Diagnostic Test</NAME>
+          <BITMAP>0x01</BITMAP>
+          <ACTIVE>FALSE</ACTIVE>                
+     </UNIT> 
+     <UNIT id="2">
+         <NAME>Verify Firmware</NAME>
+          <BITMAP>0x02</BITMAP>
+          <ACTIVE>FALSE</ACTIVE>            
+     </UNIT> 
+      <UNIT id="3">
+         <NAME>FRU Device</NAME>
+         <BITMAP>0x04</BITMAP>
+         <ACTIVE>FALSE</ACTIVE>       
+     </UNIT>
+      <UNIT id="4">
+         <NAME>Sensors Presence</NAME>
+         <BITMAP>0x08</BITMAP>
+         <ACTIVE>FALSE</ACTIVE>           
+     </UNIT>  
+      <UNIT id="5">
+         <NAME>Verify PEF Settings</NAME>
+         <BITMAP>0x10</BITMAP>
+         <ACTIVE>FALSE</ACTIVE>               
+     </UNIT> 
+      <UNIT id="6">
+         <NAME>Verify Chasis Status</NAME>
+         <BITMAP>0x20</BITMAP>
+         <ACTIVE>FALSE</ACTIVE>        
+     </UNIT> 
+      <UNIT id="7">
+          <NAME>SDR Repository Info</NAME>
+          <BITMAP>0x40</BITMAP>
+          <ACTIVE>FALSE</ACTIVE>         
+      </UNIT>       
+       <UNIT id="8">
+          <NAME>PC Health</NAME>
+          <BITMAP>0x100</BITMAP>
+          <ACTIVE>FALSE</ACTIVE>
+       </UNIT>         
+      </FFT_ITEM_11>      
+</DiagCaptor_Root>

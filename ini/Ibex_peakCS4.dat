@@ -1,0 +1,7 @@
+[SB_GLOBAL_DATA]
+BusNo=0x00
+DevNo=0x1F
+FunNo=0x00
+
+CmtNum=8
+

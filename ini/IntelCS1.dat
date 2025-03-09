@@ -1,0 +1,8 @@
+[SB_GLOBAL_DATA]
+BusNo=0x00
+DevNo=0x1F
+FunNo=0x00
+
+VendorID=0x8086
+DeviceID=0xA1C1
+RevisionID=0x09

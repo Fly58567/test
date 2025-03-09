@@ -1,0 +1,32 @@
+262c262
+<     HDD1.DeviceName = sdc
+---
+>     HDD1.DeviceName = sda
+266c266
+<     HDD1.SerialNumber = Z1P4AJDN
+---
+>     HDD1.SerialNumber = Z1P4DAQY
+268c268
+<     HDD2.DeviceName = sdb
+---
+>     HDD2.DeviceName = sdd
+272c272
+<     HDD2.SerialNumber = Z1P4CEHH
+---
+>     HDD2.SerialNumber = Z1P4DAEL
+274c274
+<     HDD3.DeviceName = sdd
+---
+>     HDD3.DeviceName = sdc
+278c278
+<     HDD3.SerialNumber = Z1P4DAEL
+---
+>     HDD3.SerialNumber = Z1P4AJDN
+280c280
+<     HDD4.DeviceName = sda
+---
+>     HDD4.DeviceName = sdb
+284c284
+<     HDD4.SerialNumber = Z1P4DAQY
+---
+>     HDD4.SerialNumber = Z1P4CEHH

@@ -1,0 +1,752 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<DiagCaptor_Root>
+  <FFT_HEADER>
+     <PROGRAM_NAME> FFT</PROGRAM_NAME>
+     <VERSION>2.1.0</VERSION>
+     <PROJECT_NAME> Project</PROJECT_NAME>
+     <ITEM_NUM> 4</ITEM_NUM>
+     <LOOP_NUM>  1</LOOP_NUM>
+  </FFT_HEADER>
+  <FFT_ITEM_01 item_id="HWCHK" loop_amount = "1" error_stop = "TRUE" unit_amount="18">
+     <UNIT tips = "Detect the BIOS manufacture, version, release date, rom size">
+         <NAME>  Verify BIOS Information Test</NAME>
+         <BITMAP>0x01</BITMAP>
+         <ACTIVE> TRUE</ACTIVE>
+         <LOOP_NUM> 1</LOOP_NUM>
+         <ERROR_STOP> TRUE</ERROR_STOP>  
+     </UNIT>
+     <UNIT tips = "Detect the System manufature, product name, version.">
+         <NAME> Verify System Information Test</NAME>
+         <BITMAP>0X02</BITMAP>
+         <ACTIVE> TRUE</ACTIVE>
+         <LOOP_NUM> 1</LOOP_NUM>
+         <ERROR_STOP> TRUE</ERROR_STOP>       
+     </UNIT>
+      <UNIT tips = "Detect the Mainboard manufacture, product name, version.">
+         <NAME> Verify Baseboard Information Test</NAME>
+         <BITMAP>0x04</BITMAP>
+         <ACTIVE> TRUE</ACTIVE>
+         <LOOP_NUM> 1</LOOP_NUM>
+         <ERROR_STOP> TRUE</ERROR_STOP>       
+     </UNIT>
+     <UNIT tips = "Detect the CPU manufature, brand id, CPU id, frequency, FSB.">
+         <NAME> Verify CPU Information Test</NAME>
+         <BITMAP>0x08</BITMAP>
+         <ACTIVE> TRUE</ACTIVE>
+         <LOOP_NUM> 1</LOOP_NUM>
+         <ERROR_STOP> TRUE</ERROR_STOP>       
+     </UNIT>  
+     <UNIT tips = "Detect the Menory socket, size, frequency, type(SDRAM,DDR1,DDR2).">
+         <NAME>  Verify Memory Information Test</NAME>
+         <BITMAP>0x10</BITMAP>
+         <ACTIVE> TRUE</ACTIVE>
+         <LOOP_NUM> 1</LOOP_NUM>
+         <ERROR_STOP> TRUE</ERROR_STOP>       
+     </UNIT>   
+     <UNIT tips = "Detect NB vendor ID, NB device ID,NB revision ID,SB vendor ID,SB device ID and SB revision ID.">
+         <NAME> Verify Chipset Information Test</NAME>
+         <BITMAP>0x20</BITMAP>
+         <ACTIVE> TRUE</ACTIVE>
+         <LOOP_NUM> 1</LOOP_NUM>
+         <ERROR_STOP> TRUE</ERROR_STOP>       
+     </UNIT>  
+     <UNIT TIPS = "Detect the SupperIO vendor, device id, revision id.">
+         <NAME>Verify SupperIO Information Test</NAME>
+         <BITMAP>0x40</BITMAP>
+         <ACTIVE> TRUE</ACTIVE>
+         <LOOP_NUM> 1</LOOP_NUM>
+         <ERROR_STOP> TRUE</ERROR_STOP>       
+     </UNIT>   
+     <UNIT TIPS = "Detect the Video product name.">
+         <NAME> Verify Video Information Test</NAME>
+          <BITMAP>0x80</BITMAP>
+         <ACTIVE> TRUE</ACTIVE>
+         <LOOP_NUM> 1</LOOP_NUM>
+         <ERROR_STOP> TRUE</ERROR_STOP>       
+     </UNIT>     
+     <UNIT TIPS = "Detect the Audio product name.">
+         <NAME>  Verify Audio Information Test</NAME>
+         <BITMAP>0x100</BITMAP>
+         <ACTIVE> TRUE</ACTIVE>
+         <LOOP_NUM> 1</LOOP_NUM>
+         <ERROR_STOP> TRUE</ERROR_STOP>       
+     </UNIT>     
+     <UNIT TIPS = "Detect LAN product name">
+         <NAME>Verify LAN Information Test</NAME>
+         <BITMAP>0x200</BITMAP>
+         <ACTIVE> TRUE</ACTIVE>
+         <LOOP_NUM> 1</LOOP_NUM>
+         <ERROR_STOP> TRUE</ERROR_STOP>       
+     </UNIT> 
+     <UNIT TIPS = "Detect the PCI device vendor id,device id,sub-vendor id,sub-device id.">
+         <NAME>Verify PCI Information Test</NAME>
+         <BITMAP>0x400</BITMAP>
+         <ACTIVE> TRUE</ACTIVE>
+         <LOOP_NUM> 1</LOOP_NUM>
+         <ERROR_STOP> TRUE</ERROR_STOP>       
+     </UNIT>         
+     <UNIT TIPS = "Detect the HDD number, size, model firmware, interface type(IDE master-slave,1394,USB,SCSI).">
+         <NAME>Verify HDD Information Test</NAME>
+         <BITMAP>0x800</BITMAP>
+         <ACTIVE> TRUE</ACTIVE>
+         <LOOP_NUM> 1</LOOP_NUM>
+         <ERROR_STOP> TRUE</ERROR_STOP>       
+     </UNIT> 
+     <UNIT TIPS = "Detect the ODD numbers, model firmware, interface type(IDE master-slave).">
+         <NAME>Verify ODD Information Test</NAME>
+         <BITMAP>0x1000</BITMAP>
+         <ACTIVE> TRUE</ACTIVE>
+         <LOOP_NUM> 1</LOOP_NUM>
+         <ERROR_STOP> TRUE</ERROR_STOP>       
+     </UNIT>    
+     <UNIT TIPS = "Detect the FDD type(1.44M,2.88M).">
+         <NAME> Verify FDD Information Test</NAME>
+         <BITMAP>0x2000</BITMAP>
+         <ACTIVE> TRUE</ACTIVE>
+         <LOOP_NUM> 1</LOOP_NUM>
+         <ERROR_STOP> TRUE</ERROR_STOP>       
+     </UNIT> 
+     <UNIT TIPS = "Detect Serial amount, port address, IRQ and status.">
+         <NAME>Verify Serial Information Test</NAME>
+         <BITMAP>0x4000</BITMAP>
+         <ACTIVE> TRUE</ACTIVE>
+         <LOOP_NUM> 1</LOOP_NUM>
+         <ERROR_STOP> TRUE</ERROR_STOP>       
+     </UNIT>             
+    <UNIT TIPS = "Detect Parallel amount, port address, IRQ and status.">
+         <NAME>Verify Parallel Information Test</NAME>
+         <BITMAP>0x8000</BITMAP>
+         <ACTIVE> TRUE</ACTIVE>
+         <LOOP_NUM> 1</LOOP_NUM>
+         <ERROR_STOP> TRUE</ERROR_STOP>       
+     </UNIT>    
+     <UNIT TIPS = "Detect the PS2 device exit or not.">
+         <NAME>Verify PS2 Information Test</NAME>
+         <BITMAP>0x10000</BITMAP>
+         <ACTIVE> TRUE</ACTIVE>
+         <LOOP_NUM> 1</LOOP_NUM>
+         <ERROR_STOP> TRUE</ERROR_STOP>       
+     </UNIT>  
+     <UNIT TIPS = "Detect the USB device amount, model name and drive name.">
+         <NAME>Verify USB Information Test</NAME>
+         <BITMAP>0x20000</BITMAP>
+         <ACTIVE> TRUE</ACTIVE>
+         <LOOP_NUM> 1</LOOP_NUM>
+         <ERROR_STOP> TRUE</ERROR_STOP>       
+     </UNIT> 
+  </FFT_ITEM_01>
+  <FFT_ITEM_02  ITEM_ID="CPU" LOOP_NUM = "1" ERROR_STOP = "TRUE" Unit_Amount="6">
+     <UNIT TIPS = "Verify CPU gerneral registers">
+         <NAME>General Register Test</NAME>
+         <BITMAP>0x01</BITMAP>
+         <ACTIVE> TRUE</ACTIVE>
+         <LOOP_NUM> 1</LOOP_NUM>
+         <ERROR_STOP> TRUE</ERROR_STOP>       
+     </UNIT> 
+     <UNIT TIPS = "Perform arithmetic functions, such as cos, sin, exp and etc.">
+         <NAME>Mathematical Calculation Test</NAME>
+         <BITMAP>0x02</BITMAP>
+         <ACTIVE> TRUE</ACTIVE>
+         <LOOP_NUM> 1</LOOP_NUM>
+         <ERROR_STOP> TRUE</ERROR_STOP>       
+     </UNIT> 
+     <UNIT TIPS = "Check the cache memory writing access.">
+         <NAME>L1 and L2 Cache Reliability Test</NAME>
+         <BITMAP>0x04</BITMAP>
+         <ACTIVE> TRUE</ACTIVE>
+         <LOOP_NUM> 1</LOOP_NUM>
+         <ERROR_STOP> TRUE</ERROR_STOP>       
+     </UNIT> 
+     <UNIT TIPS = "Check the cache memory writing access.">
+         <NAME>CPU Usage Test</NAME>
+         <BITMAP>0x08</BITMAP>
+         <ACTIVE> TRUE</ACTIVE>
+         <LOOP_NUM> 1</LOOP_NUM>
+         <ERROR_STOP> TRUE</ERROR_STOP>       
+     </UNIT>
+     <UNIT TIPS = "MMX is a set of CPU instruction that have been introduced to enable blocks of data to be processed at higher speeds.">
+         <NAME>MMX Instruction Test</NAME>
+         <BITMAP>0x10</BITMAP>
+         <ACTIVE> TRUE</ACTIVE>
+         <LOOP_NUM> 1</LOOP_NUM>
+         <ERROR_STOP> TRUE</ERROR_STOP>       
+     </UNIT> 
+     <UNIT TIPS = "Detect the processors topology structure.">
+         <NAME>Processors Topology Structure Test</NAME>
+         <BITMAP>0x20</BITMAP>
+         <ACTIVE> TRUE</ACTIVE>
+         <LOOP_NUM> 1</LOOP_NUM>
+         <ERROR_STOP> TRUE</ERROR_STOP>       
+     </UNIT>   
+  </FFT_ITEM_02>
+  <FFT_ITEM_03 ITEM_ID="PCH" LOOP_NUM = "1" ERROR_STOP = "TRUE" Unit_Amount="7">
+     <UNIT TIPS = "PCH device id and vendor id">
+         <NAME>PCH Identification Test</NAME>
+         <BITMAP>0x01</BITMAP>
+         <ACTIVE> TRUE</ACTIVE>
+         <LOOP_NUM> 1</LOOP_NUM>
+         <ERROR_STOP> TRUE</ERROR_STOP>       
+     </UNIT>   
+     <UNIT TIPS = "Read Power Management I/O registers and check ACPI configuration">
+         <NAME>PCH ACPI Configuration Test</NAME>
+         <BITMAP>0x02</BITMAP>
+         <ACTIVE> TRUE</ACTIVE>
+         <LOOP_NUM> 1</LOOP_NUM>
+         <ERROR_STOP> TRUE</ERROR_STOP>       
+     </UNIT>   
+     <UNIT TIPS = "Test TCO read/write access, and verify data-out and data-in function">
+         <NAME>PCH TCO Registers Test</NAME>
+          <BITMAP>0x04</BITMAP>
+         <ACTIVE> TRUE</ACTIVE>
+         <LOOP_NUM> 1</LOOP_NUM>
+         <ERROR_STOP> TRUE</ERROR_STOP>       
+     </UNIT>   
+      <UNIT TIPS = "Read and write multimedia timer register to check multimedia timer">
+         <NAME>PCH Multimedia Timer Test</NAME>
+          <BITMAP>0x08</BITMAP>
+         <ACTIVE> TRUE</ACTIVE>
+         <LOOP_NUM> 1</LOOP_NUM>
+         <ERROR_STOP> TRUE</ERROR_STOP>       
+     </UNIT>   
+      <UNIT TIPS = "Detect components of south bridge and verify each component">
+         <NAME>PCH Configuration Space Access Test</NAME>
+          <BITMAP>0x10</BITMAP>
+         <ACTIVE> TRUE</ACTIVE>
+         <LOOP_NUM> 1</LOOP_NUM>
+         <ERROR_STOP> TRUE</ERROR_STOP>       
+     </UNIT>   
+      <UNIT TIPS = "PCH device id and vendor id">
+         <NAME>Check PCH Info Test</NAME>
+          <BITMAP>0x20</BITMAP>
+         <ACTIVE> TRUE</ACTIVE>
+         <LOOP_NUM> 1</LOOP_NUM>
+         <ERROR_STOP> TRUE</ERROR_STOP>          
+     </UNIT>
+     <UNIT TIPS = "PCH device id and vendor id">
+         <NAME> PCH IRQ Controller Test  </NAME>
+          <BITMAP>0x40</BITMAP>
+         <ACTIVE> TRUE</ACTIVE>
+         <LOOP_NUM> 1</LOOP_NUM>
+         <ERROR_STOP> TRUE</ERROR_STOP>          
+     </UNIT>  
+  </FFT_ITEM_03>
+  <FFT_ITEM_04 item_id="HDD" loop_num = "1" error_stop = "TRUE" unit_amount="8">
+     <UNIT TIPS = "PCH device id and vendor id">
+         <NAME> HDD_LOGICAL_SEQ_RWC_TEST </NAME>
+          <BITMAP>0x01</BITMAP>
+         <ACTIVE> TRUE</ACTIVE>
+         <LOOP_NUM> 1</LOOP_NUM>
+         <ERROR_STOP> TRUE</ERROR_STOP>          
+     </UNIT>  
+     <UNIT TIPS = "PCH device id and vendor id">
+         <NAME>HDD_LOGICAL_RANDOM_RWC_TEST</NAME>
+          <BITMAP>0x02</BITMAP>
+         <ACTIVE> TRUE</ACTIVE>
+         <LOOP_NUM> 1</LOOP_NUM>
+         <ERROR_STOP> TRUE</ERROR_STOP>          
+     </UNIT>  
+     <UNIT TIPS = "PCH device id and vendor id">
+         <NAME>HDD_FREE_SPACE_SEQ_RWC_TEST </NAME>
+          <BITMAP>0x04</BITMAP>
+         <ACTIVE> TRUE</ACTIVE>
+         <LOOP_NUM> 1</LOOP_NUM>
+         <ERROR_STOP> TRUE</ERROR_STOP>          
+     </UNIT>  
+     <UNIT TIPS = "PCH device id and vendor id">
+         <NAME> HDD_FREE_SPACE_RANDOM_RWC_TEST </NAME>
+          <BITMAP>0x08</BITMAP>
+         <ACTIVE> TRUE</ACTIVE>
+         <LOOP_NUM> 1</LOOP_NUM>
+         <ERROR_STOP> TRUE</ERROR_STOP>          
+     </UNIT>  
+     <UNIT TIPS = "PCH device id and vendor id">
+         <NAME>HDD_PHYSICAL_SEQ_RWC_TEST </NAME>
+          <BITMAP>0x10</BITMAP>
+         <ACTIVE> TRUE</ACTIVE>
+         <LOOP_NUM> 1</LOOP_NUM>
+         <ERROR_STOP> TRUE</ERROR_STOP>          
+     </UNIT>  
+     <UNIT TIPS = "PCH device id and vendor id">
+         <NAME> HDD_PHYSICAL_RANDOM_RWC_TEST </NAME>
+          <BITMAP>0x20</BITMAP>
+         <ACTIVE> TRUE</ACTIVE>
+         <LOOP_NUM> 1</LOOP_NUM>
+         <ERROR_STOP> TRUE</ERROR_STOP>          
+     </UNIT>  
+     <UNIT TIPS = "PCH device id and vendor id">
+         <NAME> HDD_SMART_TEST</NAME>
+          <BITMAP>0x40</BITMAP>
+         <ACTIVE> TRUE</ACTIVE>
+         <LOOP_NUM> 1</LOOP_NUM>
+         <ERROR_STOP> TRUE</ERROR_STOP>          
+     </UNIT>  
+     <UNIT TIPS = "PCH device id and vendor id">
+         <NAME> HDD_STRUCTURE_TEST </NAME>
+          <BITMAP>0x80</BITMAP>
+         <ACTIVE> TRUE</ACTIVE>
+         <LOOP_NUM> 1</LOOP_NUM>
+         <ERROR_STOP> TRUE</ERROR_STOP>          
+     </UNIT>  
+  </FFT_ITEM_04>
+   <FFT_ITEM_05 ITEM_ID="MEMORY" LOOP_NUM = "1" ERROR_STOP = "TRUE" Unit_Amount="17">
+     <UNIT TIPS = "PCH device id and vendor id">
+         <NAME> MEMORY_RANDOM_VALUE_TEST </NAME>
+          <BITMAP>0x01</BITMAP>
+         <ACTIVE> TRUE</ACTIVE>
+         <LOOP_NUM> 1</LOOP_NUM>
+         <ERROR_STOP> TRUE</ERROR_STOP>          
+     </UNIT>  
+     <UNIT TIPS = "PCH device id and vendor id">
+         <NAME>MEMORY_XOR_TEST</NAME>
+         <BITMAP>0x02</BITMAP>
+         <ACTIVE> TRUE</ACTIVE>
+         <LOOP_NUM> 1</LOOP_NUM>
+         <ERROR_STOP> TRUE</ERROR_STOP>          
+     </UNIT>  
+     <UNIT TIPS = "PCH device id and vendor id">
+         <NAME>MEMORY_SUB_TEST</NAME>
+         <BITMAP>0x04</BITMAP>
+         <ACTIVE> TRUE</ACTIVE>
+         <LOOP_NUM> 1</LOOP_NUM>
+         <ERROR_STOP> TRUE</ERROR_STOP>          
+     </UNIT>  
+     <UNIT TIPS = "PCH device id and vendor id">
+         <NAME>MEMORY_MUL_TEST </NAME>
+         <BITMAP>0x08</BITMAP>
+         <ACTIVE> TRUE</ACTIVE>
+         <LOOP_NUM> 1</LOOP_NUM>
+         <ERROR_STOP> TRUE</ERROR_STOP>          
+     </UNIT>  
+     <UNIT TIPS = "PCH device id and vendor id">
+         <NAME>MEMORY_DIV_TEST </NAME>
+         <BITMAP>0x10</BITMAP>
+         <ACTIVE> TRUE</ACTIVE>
+         <LOOP_NUM> 1</LOOP_NUM>
+         <ERROR_STOP> TRUE</ERROR_STOP>          
+     </UNIT>  
+     <UNIT TIPS = "PCH device id and vendor id">
+         <NAME>MEMORY_OR_TEST </NAME>
+         <BITMAP>0x20</BITMAP>
+         <ACTIVE> TRUE</ACTIVE>
+         <LOOP_NUM> 1</LOOP_NUM>
+         <ERROR_STOP> TRUE</ERROR_STOP>          
+     </UNIT>  
+     <UNIT TIPS = "PCH device id and vendor id">
+         <NAME>MEMORY_AND_TEST</NAME>
+         <BITMAP>0x40</BITMAP>
+         <ACTIVE> TRUE</ACTIVE>
+         <LOOP_NUM> 1</LOOP_NUM>
+         <ERROR_STOP> TRUE</ERROR_STOP>          
+     </UNIT>  
+     <UNIT TIPS = "PCH device id and vendor id">
+         <NAME> MEMORY_SEQINC_TEST </NAME>
+         <BITMAP>0x80</BITMAP>
+         <ACTIVE> TRUE</ACTIVE>
+         <LOOP_NUM> 1</LOOP_NUM>
+         <ERROR_STOP> TRUE</ERROR_STOP>          
+     </UNIT>  
+     <UNIT TIPS = "PCH device id and vendor id">
+         <NAME>MEMORY_SOLIDBITS_TEST </NAME>
+         <BITMAP>0x100</BITMAP>
+         <ACTIVE> TRUE</ACTIVE>
+         <LOOP_NUM> 1</LOOP_NUM>
+         <ERROR_STOP> TRUE</ERROR_STOP>          
+     </UNIT>  
+     <UNIT TIPS = "PCH device id and vendor id">
+         <NAME>MEMORY_CHECKERBOARD_TEST</NAME>
+         <BITMAP>0x200</BITMAP>
+         <ACTIVE> TRUE</ACTIVE>
+         <LOOP_NUM> 1</LOOP_NUM>
+         <ERROR_STOP> TRUE</ERROR_STOP>          
+     </UNIT> 
+     <UNIT TIPS = "PCH device id and vendor id">
+         <NAME>MEMORY_BLOCKSEQ_TEST</NAME>
+         <BITMAP>0x400</BITMAP>
+         <ACTIVE> TRUE</ACTIVE>
+         <LOOP_NUM> 1</LOOP_NUM>
+         <ERROR_STOP> TRUE</ERROR_STOP>          
+     </UNIT>  
+     <UNIT TIPS = "PCH device id and vendor id">
+         <NAME>MEMORY_WALKBITS0_TEST</NAME>
+         <BITMAP>0x800</BITMAP>
+         <ACTIVE> TRUE</ACTIVE>
+         <LOOP_NUM> 1</LOOP_NUM>
+         <ERROR_STOP> TRUE</ERROR_STOP>          
+     </UNIT>  
+     <UNIT TIPS = "PCH device id and vendor id">
+         <NAME>MEMORY_WALKBITS1_TEST</NAME>
+         <BITMAP>0x1000</BITMAP>
+         <ACTIVE> TRUE</ACTIVE>
+         <LOOP_NUM> 1</LOOP_NUM>
+         <ERROR_STOP> TRUE</ERROR_STOP>          
+     </UNIT> 
+     <UNIT TIPS = "PCH device id and vendor id">
+         <NAME>MEMORY_BITSPREAD_TEST</NAME>
+          <BITMAP>0x2000</BITMAP>
+         <ACTIVE> TRUE</ACTIVE>
+         <LOOP_NUM> 1</LOOP_NUM>
+         <ERROR_STOP> TRUE</ERROR_STOP>          
+     </UNIT>    
+      <UNIT TIPS = "PCH device id and vendor id">
+         <NAME> MEMORY_BITFLIP_TEST</NAME>
+          <BITMAP>0x4000</BITMAP>
+         <ACTIVE> TRUE</ACTIVE>
+         <LOOP_NUM> 1</LOOP_NUM>
+         <ERROR_STOP> TRUE</ERROR_STOP>          
+     </UNIT>   
+      <UNIT TIPS = "PCH device id and vendor id">
+         <NAME>MEMORY_RANDOM_BLOCK_COPY_TEST</NAME>
+          <BITMAP>0x8000</BITMAP>
+         <ACTIVE> TRUE</ACTIVE>
+         <LOOP_NUM> 1</LOOP_NUM>
+         <ERROR_STOP> TRUE</ERROR_STOP>          
+     </UNIT>   
+      <UNIT TIPS = "PCH device id and vendor id">
+         <NAME>MEMORY_MOVING_INV_TEST</NAME>
+          <BITMAP>0x10000</BITMAP>
+         <ACTIVE> TRUE</ACTIVE>
+         <LOOP_NUM> 1</LOOP_NUM>
+         <ERROR_STOP> TRUE</ERROR_STOP>          
+     </UNIT>    
+  </FFT_ITEM_05>
+   <FFT_ITEM_06 ITEM_ID="CMOS" LOOP_NUM = "1" ERROR_STOP = "TRUE" Unit_Amount="7">
+     <UNIT TIPS = "PCH device id and vendor id">
+         <NAME>CMOS_STANDARD_DATA_VERIFICATION_TEST </NAME>
+         <BITMAP>0x01</BITMAP>
+         <ACTIVE> TRUE</ACTIVE>
+         <LOOP_NUM> 1</LOOP_NUM>
+         <ERROR_STOP> TRUE</ERROR_STOP>          
+     </UNIT>  
+     <UNIT TIPS = "PCH device id and vendor id">
+         <NAME>CMOS_EXTENDED_DATA_VERIFICATION_TEST</NAME>
+         <BITMAP>0x02</BITMAP>
+         <ACTIVE> TRUE</ACTIVE>
+         <LOOP_NUM> 1</LOOP_NUM>
+         <ERROR_STOP> TRUE</ERROR_STOP>          
+     </UNIT>  
+     <UNIT TIPS = "PCH device id and vendor id">
+         <NAME>CMOS_STANDARD_RESTORE_TEST </NAME>
+         <BITMAP>0x04</BITMAP>
+         <ACTIVE> TRUE</ACTIVE>
+         <LOOP_NUM> 1</LOOP_NUM>
+         <ERROR_STOP> TRUE</ERROR_STOP>          
+     </UNIT>  
+     <UNIT TIPS = "PCH device id and vendor id">
+         <NAME>CMOS_EXTENDED_RESTORE_TEST </NAME>
+         <BITMAP>0x08</BITMAP>
+         <ACTIVE> TRUE</ACTIVE>
+         <LOOP_NUM> 1</LOOP_NUM>
+         <ERROR_STOP> TRUE</ERROR_STOP>          
+     </UNIT>  
+     <UNIT TIPS = "PCH device id and vendor id">
+         <NAME>CMOS_LEAP_YEAR_VERIFICATION_TEST</NAME>
+         <BITMAP>0x10</BITMAP>
+         <ACTIVE> TRUE</ACTIVE>
+         <LOOP_NUM> 1</LOOP_NUM>
+         <ERROR_STOP> TRUE</ERROR_STOP>          
+     </UNIT>  
+     <UNIT TIPS = "PCH device id and vendor id">
+         <NAME>CMOS_Y2K_VERIFICATION_TEST </NAME>
+         <BITMAP>0x20</BITMAP>
+         <ACTIVE> TRUE</ACTIVE>
+         <LOOP_NUM> 1</LOOP_NUM>
+         <ERROR_STOP> TRUE</ERROR_STOP>          
+     </UNIT>  
+     <UNIT TIPS = "PCH device id and vendor id">
+         <NAME>CMOS_PIT_VERIFICATION_TEST</NAME>
+         <BITMAP>0x40</BITMAP>
+         <ACTIVE> TRUE</ACTIVE>
+         <LOOP_NUM> 1</LOOP_NUM>
+         <ERROR_STOP> TRUE</ERROR_STOP>          
+     </UNIT>    
+  </FFT_ITEM_06>
+  <FFT_ITEM_07 ITEM_ID="PCI" LOOP_NUM = "1" ERROR_STOP = "TRUE" Unit_Amount="11">
+     <UNIT TIPS = "PCH device id and vendor id">
+         <NAME>PCI_device_test </NAME>
+         <BITMAP>0x01</BITMAP>
+         <ACTIVE> TRUE</ACTIVE>
+         <LOOP_NUM> 1</LOOP_NUM>
+         <ERROR_STOP> TRUE</ERROR_STOP>          
+     </UNIT>  
+     <UNIT TIPS = "PCH device id and vendor id">
+         <NAME>PCI_express_device_test</NAME>
+         <BITMAP>0x02</BITMAP>
+         <ACTIVE> TRUE</ACTIVE>
+         <LOOP_NUM> 1</LOOP_NUM>
+         <ERROR_STOP> TRUE</ERROR_STOP>          
+     </UNIT>  
+     <UNIT TIPS = "PCH device id and vendor id">
+         <NAME>PCI_X_device_test</NAME>
+         <BITMAP>0x04</BITMAP>
+         <ACTIVE> TRUE</ACTIVE>
+         <LOOP_NUM> 1</LOOP_NUM>
+         <ERROR_STOP> TRUE</ERROR_STOP>          
+     </UNIT>  
+     <UNIT TIPS = "PCH device id and vendor id">
+         <NAME>PCIe_Switch_test</NAME>
+         <BITMAP>0x08</BITMAP>
+         <ACTIVE> TRUE</ACTIVE>
+         <LOOP_NUM> 1</LOOP_NUM>
+         <ERROR_STOP> TRUE</ERROR_STOP>          
+     </UNIT>  
+     <UNIT TIPS = "PCH device id and vendor id">
+         <NAME>PCIe_Relink_test</NAME>
+         <BITMAP>0x10</BITMAP>
+         <ACTIVE> TRUE</ACTIVE>
+         <LOOP_NUM> 1</LOOP_NUM>
+         <ERROR_STOP> TRUE</ERROR_STOP>          
+     </UNIT>  
+     <UNIT TIPS = "PCH device id and vendor id">
+         <NAME>PCIe_Retrain_test </NAME>
+         <BITMAP>0x20</BITMAP>
+         <ACTIVE> TRUE</ACTIVE>
+         <LOOP_NUM> 1</LOOP_NUM>
+         <ERROR_STOP> TRUE</ERROR_STOP>          
+     </UNIT>  
+     <UNIT TIPS = "PCH device id and vendor id">
+         <NAME>PCIe_Bus_Reset_test</NAME>
+         <BITMAP>0x40</BITMAP>
+         <ACTIVE> TRUE</ACTIVE>
+         <LOOP_NUM> 1</LOOP_NUM>
+         <ERROR_STOP> TRUE</ERROR_STOP>          
+     </UNIT> 
+     <UNIT TIPS = "PCH device id and vendor id">
+         <NAME>PCIe_Port_Disable_test</NAME>
+         <BITMAP>0x80</BITMAP>
+         <ACTIVE> TRUE</ACTIVE>
+         <LOOP_NUM> 1</LOOP_NUM>
+         <ERROR_STOP> TRUE</ERROR_STOP>          
+     </UNIT>    
+     <UNIT TIPS = "PCH device id and vendor id">
+         <NAME> PCIe_Reset_SAS_Controller_test</NAME>
+         <BITMAP>0x100</BITMAP>
+         <ACTIVE> TRUE</ACTIVE>
+         <LOOP_NUM> 1</LOOP_NUM>
+         <ERROR_STOP> TRUE</ERROR_STOP>          
+     </UNIT>    
+     <UNIT TIPS = "PCH device id and vendor id">
+         <NAME>CIe_width_and_speed_check</NAME>
+         <BITMAP>0x200</BITMAP>
+         <ACTIVE> TRUE</ACTIVE>
+         <LOOP_NUM> 1</LOOP_NUM>
+         <ERROR_STOP> TRUE</ERROR_STOP>          
+     </UNIT>    
+     <UNIT TIPS = "PCH device id and vendor id">
+         <NAME>PLX_Port6_and_Sas_Ctl_Retrain_test</NAME>
+         <BITMAP>0x400</BITMAP>
+         <ACTIVE> TRUE</ACTIVE>
+         <LOOP_NUM> 1</LOOP_NUM>
+         <ERROR_STOP> TRUE</ERROR_STOP>          
+     </UNIT>       
+  </FFT_ITEM_07>
+  <FFT_ITEM_08 ITEM_ID="SMBUS" LOOP_NUM = "1" ERROR_STOP = "TRUE" Unit_Amount="3">
+     <UNIT TIPS = "PCH device id and vendor id">
+         <NAME>Host Controller Test</NAME>
+         <BITMAP>0x01</BITMAP>
+         <ACTIVE> TRUE</ACTIVE>
+         <LOOP_NUM> 1</LOOP_NUM>
+         <ERROR_STOP> TRUE</ERROR_STOP>          
+     </UNIT> 
+     <UNIT TIPS = "PCH device id and vendor id">
+         <NAME>Slave List Data Test</NAME>
+         <BITMAP>0x02</BITMAP>
+         <ACTIVE> TRUE</ACTIVE>
+         <LOOP_NUM> 1</LOOP_NUM>
+         <ERROR_STOP> TRUE</ERROR_STOP>          
+     </UNIT>  
+     <UNIT TIPS = "PCH device id and vendor id">
+         <NAME>SMBus read Test</NAME>
+          <BITMAP>0x04</BITMAP>
+         <ACTIVE> TRUE</ACTIVE>
+         <LOOP_NUM> 1</LOOP_NUM>
+         <ERROR_STOP> TRUE</ERROR_STOP>          
+     </UNIT>   
+  </FFT_ITEM_08>
+  <FFT_ITEM_09 ITEM_ID="TPM" LOOP_NUM = "1" ERROR_STOP = "TRUE" Unit_Amount="4">
+     <UNIT TIPS = "PCH device id and vendor id">
+         <NAME>TPM present verication test</NAME>
+          <BITMAP>0x01</BITMAP>
+         <ACTIVE> TRUE</ACTIVE>
+         <LOOP_NUM> 1</LOOP_NUM>
+         <ERROR_STOP> TRUE</ERROR_STOP>          
+     </UNIT> 
+     <UNIT TIPS = "PCH device id and vendor id">
+         <NAME>TPM base data checking test</NAME>
+          <BITMAP>0x02</BITMAP>
+         <ACTIVE> TRUE</ACTIVE>
+         <LOOP_NUM> 1</LOOP_NUM>
+         <ERROR_STOP> TRUE</ERROR_STOP>          
+     </UNIT>  
+     <UNIT TIPS = "PCH device id and vendor id">
+         <NAME> TPM self test full test</NAME>
+          <BITMAP>0x04</BITMAP>
+         <ACTIVE> TRUE</ACTIVE>
+         <LOOP_NUM> 1</LOOP_NUM>
+         <ERROR_STOP> TRUE</ERROR_STOP>          
+     </UNIT> 
+      <UNIT TIPS = "PCH device id and vendor id">
+         <NAME>TPM general operation test</NAME>
+          <BITMAP>0x08</BITMAP>
+         <ACTIVE> TRUE</ACTIVE>
+         <LOOP_NUM> 1</LOOP_NUM>
+         <ERROR_STOP> TRUE</ERROR_STOP>          
+     </UNIT>     
+   </FFT_ITEM_09>
+    <FFT_ITEM_10 ITEM_ID="SMBIOS" LOOP_NUM = "1" ERROR_STOP = "TRUE" Unit_Amount="21">
+     <UNIT TIPS = "PCH device id and vendor id">
+         <NAME> SMBIOS_BIOS_INFO</NAME>
+          <BITMAP>0x01</BITMAP>
+         <ACTIVE> TRUE</ACTIVE>
+         <LOOP_NUM> 1</LOOP_NUM>
+         <ERROR_STOP> TRUE</ERROR_STOP>          
+     </UNIT> 
+     <UNIT TIPS = "PCH device id and vendor id">
+         <NAME>SMBIOS_SYSTEM_INFO</NAME>
+          <BITMAP>0x01</BITMAP>
+         <ACTIVE> TRUE</ACTIVE>
+         <LOOP_NUM> 1</LOOP_NUM>
+         <ERROR_STOP> TRUE</ERROR_STOP>          
+     </UNIT>  
+     <UNIT TIPS = "PCH device id and vendor id">
+         <NAME>SMBIOS_BASEBOARD_INFO</NAME>
+          <BITMAP>0x01</BITMAP>
+         <ACTIVE> TRUE</ACTIVE>
+         <LOOP_NUM> 1</LOOP_NUM>
+         <ERROR_STOP> TRUE</ERROR_STOP>          
+     </UNIT> 
+      <UNIT TIPS = "PCH device id and vendor id">
+         <NAME>SMBIOS_CHASSIS_INFO</NAME>
+          <BITMAP>0x01</BITMAP>
+         <ACTIVE> TRUE</ACTIVE>
+         <LOOP_NUM> 1</LOOP_NUM>
+         <ERROR_STOP> TRUE</ERROR_STOP>          
+     </UNIT>  
+     <UNIT TIPS = "PCH device id and vendor id">
+         <NAME> SMBIOS_PROCESSOR_INFO</NAME>
+          <BITMAP>0x01</BITMAP>
+         <ACTIVE> TRUE</ACTIVE>
+         <LOOP_NUM> 1</LOOP_NUM>
+         <ERROR_STOP> TRUE</ERROR_STOP>          
+     </UNIT> 
+      <UNIT TIPS = "PCH device id and vendor id">
+         <NAME>SMBIOS_MEMORY_CONTROLLER_INFO</NAME>
+          <BITMAP>0x01</BITMAP>
+         <ACTIVE> TRUE</ACTIVE>
+         <LOOP_NUM> 1</LOOP_NUM>
+         <ERROR_STOP> TRUE</ERROR_STOP>          
+     </UNIT>     
+     <UNIT TIPS = "PCH device id and vendor id">
+         <NAME>SMBIOS_MEM_MODULE_INFO</NAME>
+          <BITMAP>0x01</BITMAP>
+         <ACTIVE> TRUE</ACTIVE>
+         <LOOP_NUM> 1</LOOP_NUM>
+         <ERROR_STOP> TRUE</ERROR_STOP>          
+     </UNIT>     
+     <UNIT TIPS = "PCH device id and vendor id">
+         <NAME>SMBIOS_CACHE_INFO</NAME>
+          <BITMAP>0x01</BITMAP>
+         <ACTIVE> TRUE</ACTIVE>
+         <LOOP_NUM> 1</LOOP_NUM>
+         <ERROR_STOP> TRUE</ERROR_STOP>          
+     </UNIT>     
+     <UNIT TIPS = "PCH device id and vendor id">
+         <NAME>SMBIOS_PORT_CONNECT_INFO</NAME>
+          <BITMAP>0x01</BITMAP>
+         <ACTIVE> TRUE</ACTIVE>
+         <LOOP_NUM> 1</LOOP_NUM>
+         <ERROR_STOP> TRUE</ERROR_STOP>          
+     </UNIT>
+     <UNIT TIPS = "PCH device id and vendor id">
+         <NAME>SMBIOS_SYSTEM_SLOT_INFO</NAME>
+          <BITMAP>0x01</BITMAP>
+         <ACTIVE> TRUE</ACTIVE>
+         <LOOP_NUM> 1</LOOP_NUM>
+         <ERROR_STOP> TRUE</ERROR_STOP>          
+     </UNIT>
+     <UNIT TIPS = "PCH device id and vendor id">
+         <NAME>SMBIOS_ON_BOARD_DEV_INFO</NAME>
+          <BITMAP>0x01</BITMAP>
+         <ACTIVE> TRUE</ACTIVE>
+         <LOOP_NUM> 1</LOOP_NUM>
+         <ERROR_STOP> TRUE</ERROR_STOP>          
+     </UNIT>        
+     <UNIT TIPS = "PCH device id and vendor id">
+         <NAME> SMBIOS_OEM_STRING_INFO</NAME>
+          <BITMAP>0x01</BITMAP>
+         <ACTIVE> TRUE</ACTIVE>
+         <LOOP_NUM> 1</LOOP_NUM>
+         <ERROR_STOP> TRUE</ERROR_STOP>          
+     </UNIT>        
+     <UNIT TIPS = "PCH device id and vendor id">
+         <NAME>SMBIOS_SYSTEM_CONFIG_OPT_INFO</NAME>
+          <BITMAP>0x01</BITMAP>
+         <ACTIVE> TRUE</ACTIVE>
+         <LOOP_NUM> 1</LOOP_NUM>
+         <ERROR_STOP> TRUE</ERROR_STOP>          
+     </UNIT>        
+     <UNIT TIPS = "PCH device id and vendor id">
+         <NAME>SMBIOS_BIOS_LANGUAGE_INFO</NAME>
+          <BITMAP>0x01</BITMAP>
+         <ACTIVE> TRUE</ACTIVE>
+         <LOOP_NUM> 1</LOOP_NUM>
+         <ERROR_STOP> TRUE</ERROR_STOP>          
+     </UNIT>        
+     <UNIT TIPS = "PCH device id and vendor id">
+         <NAME>SMBIOS_GROUP_ASSOCIATION_INFO</NAME>
+          <BITMAP>0x01</BITMAP>
+         <ACTIVE> TRUE</ACTIVE>
+         <LOOP_NUM> 1</LOOP_NUM>
+         <ERROR_STOP> TRUE</ERROR_STOP>          
+     </UNIT>        
+     <UNIT TIPS = "PCH device id and vendor id">
+         <NAME>MBIOS_GROUP_ASSOCIATION_INFO</NAME>
+          <BITMAP>0x01</BITMAP>
+         <ACTIVE> TRUE</ACTIVE>
+         <LOOP_NUM> 1</LOOP_NUM>
+         <ERROR_STOP> TRUE</ERROR_STOP>          
+     </UNIT>        
+     <UNIT TIPS = "PCH device id and vendor id">
+         <NAME> SMBIOS_SYSTEM_EVENT_LOG_INFO</NAME>
+          <BITMAP>0x01</BITMAP>
+         <ACTIVE> TRUE</ACTIVE>
+         <LOOP_NUM> 1</LOOP_NUM>
+         <ERROR_STOP> TRUE</ERROR_STOP>          
+     </UNIT>        
+     <UNIT TIPS = "PCH device id and vendor id">
+         <NAME>PHY_MEM_ARRAY_INFO</NAME>
+          <BITMAP>0x01</BITMAP>
+         <ACTIVE> TRUE</ACTIVE>
+         <LOOP_NUM> 1</LOOP_NUM>
+         <ERROR_STOP> TRUE</ERROR_STOP>          
+     </UNIT> 
+     <UNIT TIPS = "PCH device id and vendor id">
+         <NAME>SMBIOS_MEM_DEVICE_INFO</NAME>
+          <BITMAP>0x01</BITMAP>
+         <ACTIVE> TRUE</ACTIVE>
+         <LOOP_NUM> 1</LOOP_NUM>
+         <ERROR_STOP> TRUE</ERROR_STOP>          
+     </UNIT>            
+     <UNIT TIPS = "PCH device id and vendor id">
+         <NAME>SMBIOS_MEM_ERROR_INFO</NAME>
+          <BITMAP>0x01</BITMAP>
+         <ACTIVE> TRUE</ACTIVE>
+         <LOOP_NUM> 1</LOOP_NUM>
+         <ERROR_STOP> TRUE</ERROR_STOP>          
+     </UNIT>            
+     <UNIT TIPS = "PCH device id and vendor id">
+         <NAME>SMBIOS_MEM_ARRAY_MAP_ADDR_INFO</NAME>
+          <BITMAP>0x01</BITMAP>
+         <ACTIVE> TRUE</ACTIVE>
+         <LOOP_NUM> 1</LOOP_NUM>
+         <ERROR_STOP> TRUE</ERROR_STOP>          
+     </UNIT>   
+     <UNIT TIPS = "PCH device id and vendor id">
+         <NAME>SMBIOS_MEM_DEV_MAP_ADDR_INFO</NAME>
+          <BITMAP>0x01</BITMAP>
+         <ACTIVE> TRUE</ACTIVE>
+         <LOOP_NUM> 1</LOOP_NUM>
+         <ERROR_STOP> TRUE</ERROR_STOP>          
+     </UNIT>                                  
+   </FFT_ITEM_10>
+     
+</DiagCaptor_Root>

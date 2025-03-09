@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<IT_Manager><Server_SelfTest version="1.0"><SelfTest_Status Description="SMBIOS Header Info" TYPE="SMBIOS"><BMCIP>d0:27:88:49:19:eb</BMCIP><TestItem>BMC</TestItem><UnitName>Unit8:PC Health</UnitName><Result>Pass</Result><ErrorCode>0x00000000</ErrorCode><Remark/><StartTime>2012/10/28 20:27:00</StartTime><EndTime>2012/10/28 20:27:03</EndTime></SelfTest_Status></Server_SelfTest></IT_Manager>

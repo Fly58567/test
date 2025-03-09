@@ -1,0 +1,9 @@
+<root rootver="v1">
+  <test1 name="amount">
+     <a>1</a>
+     <b>2</b>
+  </test1>
+  <test2 address="shenzhen">
+  </test2>
+
+</root>
